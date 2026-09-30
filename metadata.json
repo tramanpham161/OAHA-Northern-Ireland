@@ -1,0 +1,6 @@
+{
+  "name": "OAHA Northern Ireland",
+  "description": "Accelerating Social Mobility through Place-Based Change in Northern Ireland.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
