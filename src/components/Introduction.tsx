@@ -16,11 +16,9 @@ export const Introduction: React.FC = () => {
             This is not about creating another programme or duplicating the work already taking place. It is about connecting the system more effectively, amplifying what works and helping people navigate the journey from education into sustainable, good-quality employment.
           </p>
           <div className="pt-2">
-            <p className="font-semibold text-[#0f344a] text-sm sm:text-base">
-              This is not about duplication.
-            </p>
-            <p className="font-semibold text-[#3AB03A] text-sm sm:text-base mt-0.5">
-              It is about collaboration, amplification and collective action.
+            <p className="font-semibold text-sm sm:text-base">
+              <span className="text-[#0f344a]">This is not about duplication. </span>
+              <span className="text-[#3AB03A]">It is about collaboration, amplification and collective action.</span>
             </p>
           </div>
 
