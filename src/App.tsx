@@ -24,7 +24,6 @@ export default function App() {
     >
       <Header />
       <Hero />
-      <QuickNav />
       <main>
         <Introduction />
         <Ambition />
