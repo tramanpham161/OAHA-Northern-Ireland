@@ -84,7 +84,7 @@ export const AboutThePartnership: React.FC = () => {
                   aria-label="Lewis Silkin Website"
                 >
                   <img
-                    src="/images/lewis-silkin-logo.svg"
+                    src="/images/lewis-silkin-logo-rgb-black-text.webp"
                     alt="Lewis Silkin"
                     className="h-10 sm:h-12 md:h-13 w-auto object-contain transition-transform group-hover:scale-[1.02]"
                   />
