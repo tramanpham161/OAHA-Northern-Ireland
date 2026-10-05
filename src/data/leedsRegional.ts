@@ -457,7 +457,7 @@ export const buildThePictureData = {
   ],
   footerNote: "The questionnaire is a starting point. It is not a detailed evaluation of your organisation or programme.",
   ctaText: "Complete the questionnaire",
-  questionnaireUrl: "https://docs.google.com/forms/d/e/1FAIpQLScf9QbVprOhj2Fg1WjM4JJXfGGg2M46pupEMhQEXHkSMcFWmg/viewform",
+  questionnaireUrl: "https://forms.gle/ASMTJYBQSSsdE3r2A",
   whoWeWantToHearFrom: {
     title: "Who we want to hear from",
     prompt: "We welcome contributions from:",
@@ -539,5 +539,5 @@ export const bePartOfTheProject = {
   badge: "GET INVOLVED",
   title: "Be part of the initiative",
   subtitle: "Whether you are an employer, educator, community organisation, policymaker or young person, your insight can help us understand the current system and identify where collective action could make the greatest difference.",
-  questionnaireUrl: "https://docs.google.com/forms/d/e/1FAIpQLScf9QbVprOhj2Fg1WjM4JJXfGGg2M46pupEMhQEXHkSMcFWmg/viewform"
+  questionnaireUrl: "https://forms.gle/ASMTJYBQSSsdE3r2A"
 };
