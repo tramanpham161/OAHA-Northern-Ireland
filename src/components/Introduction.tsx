@@ -1,4 +1,5 @@
 import React from 'react';
+import { bePartOfTheProject } from '../data/leedsRegional';
 
 export const Introduction: React.FC = () => {
   return (
@@ -25,7 +26,9 @@ export const Introduction: React.FC = () => {
           {/* 2 Call to Action Buttons Under the Text, Side by Side */}
           <div className="pt-4 flex flex-wrap sm:flex-nowrap gap-3 sm:gap-4 items-center">
             <a
-              href="#be-part"
+              href={bePartOfTheProject.questionnaireUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg bg-[#2E536B] hover:bg-[#1B3B54] text-white text-sm font-medium transition-colors cursor-pointer"
             >
               Complete the questionnaire
