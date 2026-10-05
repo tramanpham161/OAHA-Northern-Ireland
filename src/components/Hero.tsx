@@ -37,11 +37,11 @@ export const Hero: React.FC = () => {
           <h1 className="font-sans font-bold text-xl sm:text-2xl lg:text-[1.6rem] xl:text-[1.85rem] leading-[1.35] tracking-tight text-left">
             <span className="block md:inline-block font-bold">
               <span className="text-[#2E536B] font-bold">Accelerating </span>
-              <span className="text-[#3AB03A] font-bold">Social Mobility </span>
+              <span className="text-[#2BB7BA] font-bold">Social Mobility </span>
             </span>
             <span className="block md:inline-block md:ml-1.5 font-bold">
               <span className="text-[#2E536B] font-bold">in </span>
-              <span className="text-[#FF9900] font-bold">Northern Ireland</span>
+              <span className="text-[#3AB03A] font-bold">Northern Ireland</span>
             </span>
           </h1>
 
