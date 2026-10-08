@@ -32,19 +32,19 @@ export const WhoInvolved: React.FC = () => {
       case 'cyan':
         return {
           borderTop: 'border-t-[#2BB7BA]',
-          iconBg: 'bg-[#2BB7BA]/10 text-[#2BB7BA]',
+          iconBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
           dot: 'bg-[#2BB7BA]'
         };
       case 'forest':
         return {
           borderTop: 'border-t-[#3AB03A]',
-          iconBg: 'bg-[#3AB03A]/10 text-[#3AB03A]',
+          iconBg: 'bg-[#3AB03A]/10 text-[#206E20]',
           dot: 'bg-[#3AB03A]'
         };
       case 'orange':
         return {
           borderTop: 'border-t-[#FF9900]',
-          iconBg: 'bg-[#FF9900]/10 text-[#FF9900]',
+          iconBg: 'bg-[#FF9900]/10 text-[#A34C00]',
           dot: 'bg-[#FF9900]'
         };
       case 'navy':
@@ -93,13 +93,13 @@ export const WhoInvolved: React.FC = () => {
               {niPrioritiesData.pfgLead}
             </p>
             <div className="flex items-center gap-2 shrink-0">
-              <span className="px-3 py-1 rounded-full bg-[#2BB7BA]/10 text-[#2BB7BA] text-xs font-medium">
+              <span className="px-3 py-1 rounded-full bg-[#2BB7BA]/10 text-[#136B6F] text-xs font-medium">
                 People
               </span>
-              <span className="px-3 py-1 rounded-full bg-[#3AB03A]/10 text-[#3AB03A] text-xs font-medium">
+              <span className="px-3 py-1 rounded-full bg-[#3AB03A]/10 text-[#206E20] text-xs font-medium">
                 Planet
               </span>
-              <span className="px-3 py-1 rounded-full bg-[#FF9900]/10 text-[#FF9900] text-xs font-medium">
+              <span className="px-3 py-1 rounded-full bg-[#FF9900]/10 text-[#A34C00] text-xs font-medium">
                 Prosperity
               </span>
             </div>
@@ -176,10 +176,10 @@ export const WhoInvolved: React.FC = () => {
           >
             <div className="space-y-2.5">
               <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-[#3AB03A]/10 text-[#3AB03A] flex items-center justify-center shrink-0">
+                <div className="w-7 h-7 rounded-lg bg-[#3AB03A]/10 text-[#206E20] flex items-center justify-center shrink-0">
                   <UsersRound className="w-3.5 h-3.5" />
                 </div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#3AB03A]">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#206E20]">
                   Local Delivery in Action
                 </span>
               </div>
