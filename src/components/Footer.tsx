@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
               href="https://oaha.uk"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2E536B] font-semibold underline hover:text-[#2BB7BA] transition-colors"
+              className="text-[#2E536B] font-semibold underline hover:text-[#136B6F] transition-colors"
             >
               oaha.uk
             </a>{" "}
@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
               href="https://www.linkedin.com/company/oahasocialsustainability/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2E536B] font-semibold underline hover:text-[#2BB7BA] transition-colors"
+              className="text-[#2E536B] font-semibold underline hover:text-[#136B6F] transition-colors"
             >
               LinkedIn
             </a>
