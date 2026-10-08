@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   MapPin,
+  CircleHelp,
   Sparkles,
   Layers,
   Compass,
@@ -21,7 +22,8 @@ export const QuickNav: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('top');
 
   const navItems: NavItem[] = [
-    { id: 'ni-context', label: 'The Context', shortLabel: 'Context', icon: <MapPin className="w-3.5 h-3.5" /> },
+    { id: 'ni-context', label: 'NI Context', shortLabel: 'Context', icon: <MapPin className="w-3.5 h-3.5" /> },
+    { id: 'why-it-matters', label: 'Why It Matters', shortLabel: 'Why Matters', icon: <CircleHelp className="w-3.5 h-3.5" /> },
     { id: 'the-opportunity', label: 'The Opportunity', shortLabel: 'Opportunity', icon: <Sparkles className="w-3.5 h-3.5" /> },
     { id: 'how-we-work', label: 'What We Are Doing', shortLabel: 'Activities', icon: <Layers className="w-3.5 h-3.5" /> },
     { id: 'our-approach', label: 'Our Approach', shortLabel: 'Approach', icon: <Compass className="w-3.5 h-3.5" /> },
@@ -101,7 +103,7 @@ export const QuickNav: React.FC = () => {
         <a
           href="#be-part"
           onClick={(e) => scrollToSection(e, 'be-part')}
-          className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#3AB03A] hover:bg-[#329e32] text-white text-xs font-semibold shadow-2xs transition-all shrink-0 cursor-pointer"
+          className="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#237723] hover:bg-[#1b5f1b] text-white text-xs font-semibold shadow-2xs transition-all shrink-0 cursor-pointer"
         >
           <span>Take Action</span>
         </a>
