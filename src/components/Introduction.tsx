@@ -19,7 +19,7 @@ export const Introduction: React.FC = () => {
           <div className="pt-2">
             <p className="font-semibold text-sm sm:text-base">
               <span className="text-[#0f344a]">This is not about duplication. </span>
-              <span className="text-[#3AB03A]">It is about collaboration, amplification and collective action.</span>
+              <span className="text-[#206E20]">It is about collaboration, amplification and collective action.</span>
             </p>
           </div>
 
