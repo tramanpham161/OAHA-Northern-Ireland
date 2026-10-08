@@ -6,8 +6,8 @@ export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: "WHY IT MATTERS", href: "#why-it-matters" },
     { name: "NI CONTEXT", href: "#ni-context" },
+    { name: "WHY IT MATTERS", href: "#why-it-matters" },
     { name: "THE OPPORTUNITY", href: "#the-opportunity" },
     { name: "WHAT WE ARE DOING", href: "#how-we-work" },
     { name: "NI PRIORITIES", href: "#regional-priorities" },
@@ -43,7 +43,7 @@ export const Header: React.FC = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#51615a] hover:text-[#2BB7BA] hover:bg-[#edeae4]/45 px-3 py-2 rounded-md text-[10px] xl:text-[11px] font-bold tracking-wider uppercase transition-all cursor-pointer"
+                  className="text-[#51615a] hover:text-[#136B6F] hover:bg-[#edeae4]/45 px-3 py-2 rounded-md text-[10px] xl:text-[11px] font-bold tracking-wider uppercase transition-all cursor-pointer"
                 >
                   {link.name}
                 </a>
