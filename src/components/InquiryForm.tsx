@@ -224,7 +224,7 @@ export const InquiryForm: React.FC = () => {
             href={bePartOfTheProject.questionnaireUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-[#2BB7BA] hover:bg-[#25a0a3] text-white font-sans font-semibold text-xs sm:text-sm shadow-2xs hover:shadow-xs transition-all cursor-pointer group"
+            className="inline-flex items-center justify-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-[#167478] hover:bg-[#115e61] text-white font-sans font-semibold text-xs sm:text-sm shadow-2xs hover:shadow-xs transition-all cursor-pointer group"
           >
             <FileText className="w-4 h-4 shrink-0 text-white/95" />
             <span className="truncate">Complete the questionnaire</span>
@@ -239,9 +239,9 @@ export const InquiryForm: React.FC = () => {
               setSubmitted(false);
               setError('');
             }}
-            className={`inline-flex items-center justify-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-[#3AB03A] hover:bg-[#329e32] text-white font-sans font-semibold text-xs sm:text-sm shadow-2xs hover:shadow-xs transition-all cursor-pointer ${
+            className={`inline-flex items-center justify-center gap-2 px-3.5 py-2.5 sm:px-4 sm:py-2.5 rounded-xl bg-[#237723] hover:bg-[#1b5f1b] text-white font-sans font-semibold text-xs sm:text-sm shadow-2xs hover:shadow-xs transition-all cursor-pointer ${
               activeForm === 'register' && !submitted
-                ? 'ring-2 ring-offset-2 ring-[#3AB03A] opacity-100 shadow-sm font-bold'
+                ? 'ring-2 ring-offset-2 ring-[#237723] opacity-100 shadow-sm font-bold'
                 : 'opacity-90 hover:opacity-100'
             }`}
           >
@@ -297,7 +297,7 @@ export const InquiryForm: React.FC = () => {
                 exit={{ opacity: 0 }}
                 className="text-center py-8 space-y-5 max-w-lg mx-auto"
               >
-                <div className="w-16 h-16 bg-[#3AB03A]/10 border border-[#3AB03A]/20 rounded-full flex items-center justify-center text-[#3AB03A] mx-auto">
+                <div className="w-16 h-16 bg-[#3AB03A]/10 border border-[#3AB03A]/20 rounded-full flex items-center justify-center text-[#206E20] mx-auto">
                   <CheckCircle2 className="w-8 h-8" />
                 </div>
 
