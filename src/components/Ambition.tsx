@@ -43,7 +43,7 @@ export const Ambition: React.FC = () => {
           <div className="lg:col-span-7 space-y-4 text-left">
             <div className="space-y-3.5 text-[#51615a] text-sm sm:text-base leading-relaxed">
               <p className="font-normal text-[#51615a]">
-                In April to June 2026, an estimated <strong className="font-semibold text-[#2E536B]">24,000 young people aged 16–24</strong> were not in education, employment or training. This represented <strong className="font-semibold text-[#FF9900]">11.8%</strong> of all young people in this age group.
+                In April to June 2026, an estimated <strong className="font-semibold text-[#2E536B]">24,000 young people aged 16–24</strong> were not in education, employment or training. This represented <strong className="font-semibold text-[#A34C00]">11.8%</strong> of all young people in this age group.
               </p>
               <p className="font-normal text-[#51615a]">
                 {niContext.paragraphs[1]}
@@ -77,7 +77,7 @@ export const Ambition: React.FC = () => {
                   <span className="font-sans font-semibold text-4xl sm:text-5xl text-[#2E536B] tracking-tight">
                     24,000
                   </span>
-                  <span className="px-2.5 py-1 rounded-full bg-[#FF9900]/15 text-[#FF9900] font-sans font-semibold text-xs sm:text-sm">
+                  <span className="px-2.5 py-1 rounded-full bg-[#FF9900]/15 text-[#A34C00] font-sans font-semibold text-xs sm:text-sm">
                     11.8% (16–24)
                   </span>
                 </div>
