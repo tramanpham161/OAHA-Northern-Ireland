@@ -73,7 +73,7 @@ export const BuildThePicture: React.FC = () => {
                 className="inline-flex items-center gap-2 bg-[#2E536B] hover:bg-[#1a384c] text-white px-5 py-2.5 rounded-xl font-medium text-xs sm:text-sm shadow-xs transition-all duration-200 active:scale-95 group cursor-pointer"
               >
                 <span>{buildThePictureData.ctaText}</span>
-                <ExternalLink className="w-3.5 h-3.5 text-[#2BB7BA] group-hover:translate-x-0.5 transition-transform" />
+                <ExternalLink className="w-3.5 h-3.5 text-white/90 group-hover:translate-x-0.5 transition-transform" />
               </a>
             </div>
           </div>
@@ -90,7 +90,7 @@ export const BuildThePicture: React.FC = () => {
             className="space-y-3 text-left"
           >
             <div className="flex items-center gap-2 pb-2 border-b border-[#e1e1db]">
-              <div className="w-7 h-7 rounded-lg bg-[#3AB03A]/10 text-[#3AB03A] flex items-center justify-center shrink-0">
+              <div className="w-7 h-7 rounded-lg bg-[#3AB03A]/10 text-[#206E20] flex items-center justify-center shrink-0">
                 <UsersRound className="w-4 h-4" />
               </div>
               <h3 className="font-sans font-semibold text-base sm:text-lg text-[#2E536B] tracking-tight">
@@ -105,7 +105,7 @@ export const BuildThePicture: React.FC = () => {
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5 text-xs sm:text-sm text-[#334155] list-none p-0 m-0">
               {buildThePictureData.whoWeWantToHearFrom.contributors.map((contrib, cIdx) => (
                 <li key={cIdx} className="flex items-start gap-2 leading-relaxed">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#3AB03A] shrink-0 mt-1.5" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#206E20] shrink-0 mt-1.5" />
                   <span>{contrib}</span>
                 </li>
               ))}
@@ -121,7 +121,7 @@ export const BuildThePicture: React.FC = () => {
             className="space-y-3 text-left"
           >
             <div className="flex items-center gap-2 pb-2 border-b border-[#e1e1db]">
-              <div className="w-7 h-7 rounded-lg bg-[#FF9900]/10 text-[#FF9900] flex items-center justify-center shrink-0">
+              <div className="w-7 h-7 rounded-lg bg-[#FF9900]/10 text-[#A34C00] flex items-center justify-center shrink-0">
                 <Briefcase className="w-4 h-4" />
               </div>
               <h3 className="font-sans font-semibold text-base sm:text-lg text-[#2E536B] tracking-tight">
