@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { aboutThePartnershipData } from '../data/leedsRegional';
-import { Handshake, ExternalLink } from 'lucide-react';
+import { Handshake, ExternalLink, Sparkles, Landmark } from 'lucide-react';
 import { OahaLogo } from './OahaLogo';
+import { LewisSilkinLogo } from './LewisSilkinLogo';
 
 export const AboutThePartnership: React.FC = () => {
   const photos = [
@@ -64,105 +65,192 @@ export const AboutThePartnership: React.FC = () => {
         </div>
 
         {/* 2 Partner Cards Side by Side - Prominent Brand Logos & Context */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
-          {/* Lewis Silkin Card */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 sm:gap-6 items-stretch">
+          {/* Lewis Silkin Card - Initiative Funder & Convener */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-20px' }}
             transition={{ duration: 0.35 }}
-            className="bg-[#faf9f6]/80 border border-[#e1e1db] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-3xs text-left"
+            className="bg-white border-2 border-[#004770]/20 hover:border-[#004770]/40 rounded-2xl flex flex-col justify-between shadow-3xs text-left overflow-hidden transition-all group"
           >
-            <div className="space-y-4">
-              {/* Brand Header with prominent logo */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#e1e1db]">
-                <a
-                  href="https://www.lewissilkin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block"
-                  aria-label="Lewis Silkin Website"
-                >
-                  <img
-                    src="/images/lewis-silkin-logo.svg"
-                    alt="Lewis Silkin"
-                    className="h-10 sm:h-12 md:h-13 w-auto object-contain transition-transform group-hover:scale-[1.02]"
-                  />
-                </a>
-                <a
-                  href="https://www.lewissilkin.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#2E536B] hover:text-white bg-[#2E536B]/5 hover:bg-[#2E536B] border border-[#2E536B]/20 transition-all shrink-0 self-start sm:self-center"
-                >
-                  <span>lewissilkin.com</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
+            {/* Official Lewis Silkin 9-Color Brand Spectrum Bar */}
+            <div className="h-2 w-full flex select-none" aria-hidden="true">
+              <div className="flex-1 bg-[#E0CC00]" title="Yellow" />
+              <div className="flex-1 bg-[#FF6900]" title="Orange" />
+              <div className="flex-1 bg-[#E62612]" title="Red" />
+              <div className="flex-1 bg-[#D91785]" title="Pink" />
+              <div className="flex-1 bg-[#9678D4]" title="Lilac" />
+              <div className="flex-1 bg-[#00619C]" title="Navy" />
+              <div className="flex-1 bg-[#00A8E0]" title="Blue" />
+              <div className="flex-1 bg-[#00C7B0]" title="Mint" />
+              <div className="flex-1 bg-[#96D600]" title="Lime" />
+            </div>
 
-              <div>
-                <p className="font-sans font-semibold text-xs sm:text-sm text-[#2E536B] tracking-wide mb-2">
-                  Convening employers & regional stakeholders
-                </p>
-                <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                  Lewis Silkin is working with OAHA to support the development of this Northern Ireland place-based social mobility initiative, helping to convene employers and wider stakeholders around the shared challenge of widening access to opportunity.
-                </p>
+            <div className="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div className="space-y-4">
+                {/* Brand Header with prominent logo & Funder Tag */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#e1e1db]">
+                  <div className="space-y-1.5">
+                    <a
+                      href="https://www.lewissilkin.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/logo block"
+                      aria-label="Lewis Silkin Website"
+                    >
+                      <LewisSilkinLogo className="h-9 sm:h-11 w-auto transition-transform group-hover/logo:scale-[1.02]" />
+                    </a>
+                    {/* Funder Designation Badge */}
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#004770]/10 border border-[#004770]/25 text-[#004770] text-[11px] font-bold uppercase tracking-wider">
+                      <Sparkles className="w-3 h-3 text-[#007FA9]" />
+                      <span>Initiative Funder & Regional Convener</span>
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://www.lewissilkin.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-white bg-[#004770] hover:bg-[#00619C] shadow-2xs hover:shadow-xs transition-all shrink-0 self-start sm:self-center cursor-pointer"
+                  >
+                    <span>lewissilkin.com</span>
+                    <ExternalLink className="w-3.5 h-3.5 text-[#00C7B0]" />
+                  </a>
+                </div>
+
+                {/* Paragraph 1: Core Convening Mandate */}
+                <div>
+                  <p className="font-sans font-semibold text-xs sm:text-sm text-[#004770] tracking-wide mb-1.5">
+                    Convening employers & regional stakeholders
+                  </p>
+                  <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
+                    Lewis Silkin is working with OAHA to support the development of this Northern Ireland place-based social mobility initiative, helping to convene employers and wider stakeholders around the shared challenge of widening access to opportunity.
+                  </p>
+                </div>
+
+                {/* Paragraph 2: Founder Heritage Inset Box */}
+                <div className="rounded-xl bg-[#004770]/[0.03] border border-[#00619C]/20 p-3.5 sm:p-4 space-y-2">
+                  <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#004770]">
+                    <Landmark className="w-4 h-4 text-[#00619C] shrink-0" />
+                    <span>The Story Behind the Name</span>
+                  </div>
+                  <p className="font-sans text-xs sm:text-sm text-[#333333] leading-relaxed">
+                    Social mobility has long been part of the firm’s story. We’re named after <strong className="font-semibold text-[#004770]">Lewis Silkin (1889 – 1972)</strong>, whose own story continues to inspire us. His family were refugees from Lithuania and he was brought up in poverty, but qualified as a solicitor before becoming an MP and eventually sitting in the House of Lords.
+                  </p>
+                </div>
+
+                {/* Paragraph 3: Commitment & Initiatives */}
+                <div className="space-y-2.5">
+                  <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
+                    We continue to be committed to improving social mobility through a wide range of initiatives including outreach and mentoring programmes in schools, and work experience and apprenticeship schemes.
+                  </p>
+
+                  {/* Initiatives Pills in Lewis Silkin Brand Shades */}
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#00C7B0]/10 border border-[#007864]/25 text-[#007864] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00C7B0]" />
+                      School Outreach & Mentoring
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#00A8E0]/10 border border-[#007FA9]/25 text-[#007FA9] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00A8E0]" />
+                      Work Experience & Apprenticeships
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#00619C]/10 border border-[#004770]/25 text-[#004770] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#00619C]" />
+                      Regional Employer Convening
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
 
-          {/* OAHA Card */}
+          {/* OAHA Card - Delivery & Systems Leadership Partner */}
           <motion.div
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-20px' }}
             transition={{ duration: 0.35, delay: 0.08 }}
-            className="bg-[#faf9f6]/80 border border-[#e1e1db] rounded-2xl p-5 sm:p-6 flex flex-col justify-between shadow-3xs text-left"
+            className="bg-white border-2 border-[#206E20]/20 hover:border-[#206E20]/40 rounded-2xl flex flex-col justify-between shadow-3xs text-left overflow-hidden transition-all group"
           >
-            <div className="space-y-4">
-              {/* Brand Header with prominent logo */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#e1e1db]">
-                <a
-                  href="https://oaha.uk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-3.5"
-                  aria-label="OAHA Website"
-                >
-                  <OahaLogo className="w-16 h-11 sm:w-20 sm:h-13 object-contain shrink-0 rounded-md border border-[#e1e1db] shadow-xs transition-transform group-hover:scale-[1.02]" />
-                  <div>
-                    <span className="font-sans font-bold text-lg sm:text-xl text-[#2E536B] tracking-tight block">
-                      OAHA
+            {/* OAHA 4-Color Brand Stripe */}
+            <div className="h-2 w-full flex select-none" aria-hidden="true">
+              <div className="flex-1 bg-[#2BB7BA]" title="Teal" />
+              <div className="flex-1 bg-[#3AB03A]" title="Green" />
+              <div className="flex-1 bg-[#FF9900]" title="Orange" />
+              <div className="flex-1 bg-[#969696]" title="Grey" />
+            </div>
+
+            <div className="p-5 sm:p-6 space-y-4 flex-1 flex flex-col justify-between">
+              <div className="space-y-4">
+                {/* Brand Header with prominent logo & Delivery Partner Tag */}
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-[#e1e1db]">
+                  <div className="space-y-1.5">
+                    <a
+                      href="https://oaha.uk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group/logo flex items-center gap-3.5"
+                      aria-label="OAHA Website"
+                    >
+                      <OahaLogo className="w-14 h-10 sm:w-16 sm:h-11 object-contain shrink-0 rounded-md border border-[#e1e1db] shadow-xs transition-transform group-hover/logo:scale-[1.02]" />
+                      <div>
+                        <span className="font-sans font-bold text-lg sm:text-xl text-[#2E536B] tracking-tight block">
+                          OAHA
+                        </span>
+                        <span className="font-sans text-xs text-[#51615a] block">
+                          Social Sustainability
+                        </span>
+                      </div>
+                    </a>
+                    {/* Delivery Partner Badge */}
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-[#206E20]/10 border border-[#206E20]/25 text-[#206E20] text-[11px] font-bold uppercase tracking-wider">
+                      <span>Delivery & Systems Leadership Partner</span>
+                    </div>
+                  </div>
+
+                  <a
+                    href="https://oaha.uk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg text-xs font-semibold text-white bg-[#206E20] hover:bg-[#185518] shadow-2xs hover:shadow-xs transition-all shrink-0 self-start sm:self-center cursor-pointer"
+                  >
+                    <span>oaha.uk</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
+
+                <div className="space-y-2.5">
+                  <p className="font-sans font-semibold text-xs sm:text-sm text-[#206E20] tracking-wide">
+                    Social sustainability & place-based change
+                  </p>
+                  <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
+                    OAHA is a social sustainability consultancy that helps organisations turn ambition into measurable action across people, value chains and communities.
+                  </p>
+                  <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
+                    OAHA leads place-based social mobility work that brings employers, education providers, charities, communities and young people together to understand systems, identify gaps and develop practical responses.
+                  </p>
+                  <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
+                    The Northern Ireland initiative will build on learning from OAHA’s work in Wales and Yorkshire while creating an approach shaped specifically by Northern Ireland’s people, places and institutions.
+                  </p>
+
+                  {/* OAHA Delivery Action Pills */}
+                  <div className="flex flex-wrap gap-2 pt-1">
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#2BB7BA]/10 border border-[#136B6F]/25 text-[#136B6F] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#2BB7BA]" />
+                      Ecosystem Mapping & Analysis
                     </span>
-                    <span className="font-sans text-xs text-[#51615a] block">
-                      Social Sustainability
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#3AB03A]/10 border border-[#206E20]/25 text-[#206E20] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#3AB03A]" />
+                      Place-Based Social Mobility
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#FF9900]/10 border border-[#A34C00]/25 text-[#A34C00] text-xs font-medium">
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#FF9900]" />
+                      Cross-Sector Co-Design
                     </span>
                   </div>
-                </a>
-                <a
-                  href="https://oaha.uk"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold text-[#3AB03A] hover:text-white bg-[#3AB03A]/5 hover:bg-[#3AB03A] border border-[#3AB03A]/25 transition-all shrink-0 self-start sm:self-center"
-                >
-                  <span>oaha.uk</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
-                </a>
-              </div>
-
-              <div className="space-y-2">
-                <p className="font-sans font-semibold text-xs sm:text-sm text-[#3AB03A] tracking-wide mb-2">
-                  Social sustainability & place-based change
-                </p>
-                <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                  OAHA is a social sustainability consultancy that helps organisations turn ambition into measurable action across people, value chains and communities.
-                </p>
-                <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                  OAHA leads place-based social mobility work that brings employers, education providers, charities, communities and young people together to understand systems, identify gaps and develop practical responses.
-                </p>
-                <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                  The Northern Ireland initiative will build on learning from OAHA’s work in Wales and Yorkshire while creating an approach shaped specifically by Northern Ireland’s people, places and institutions.
-                </p>
+                </div>
               </div>
             </div>
           </motion.div>
