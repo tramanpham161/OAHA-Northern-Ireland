@@ -11,14 +11,14 @@ import {
 
 export const Success: React.FC = () => {
   const accentColors = [
-    'text-[#2BB7BA]',
-    'text-[#3AB03A]',
-    'text-[#FF9900]',
+    'text-[#136B6F]',
+    'text-[#206E20]',
+    'text-[#A34C00]',
     'text-[#2E536B]',
     'text-[#986430]',
-    'text-[#2BB7BA]',
-    'text-[#3AB03A]',
-    'text-[#FF9900]',
+    'text-[#136B6F]',
+    'text-[#206E20]',
+    'text-[#A34C00]',
     'text-[#2E536B]'
   ];
 
@@ -34,8 +34,8 @@ export const Success: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-4xl space-y-2.5">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e1e1db]/80 cursor-default">
-            <Scale className="w-3.5 h-3.5 text-[#3AB03A]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#3AB03A]">
+            <Scale className="w-3.5 h-3.5 text-[#206E20]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#206E20]">
               {equalitySocialValueData.badge}
             </span>
           </div>
@@ -84,7 +84,7 @@ export const Success: React.FC = () => {
           >
             <div className="space-y-3.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#FF9900]/10 text-[#FF9900] flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-[#FF9900]/10 text-[#A34C00] flex items-center justify-center shrink-0">
                   <Layers className="w-4 h-4" />
                 </div>
                 <h3 className="font-sans font-semibold text-sm sm:text-base text-[#2E536B]">
@@ -103,7 +103,7 @@ export const Success: React.FC = () => {
 
               {/* Intersecting Characteristics Tags */}
               <div className="pt-2">
-                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#969696] block mb-2">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#595959] block mb-2">
                   Intersecting dimensions:
                 </span>
                 <div className="flex flex-wrap gap-1.5 sm:gap-2">
@@ -130,7 +130,7 @@ export const Success: React.FC = () => {
           >
             <div className="space-y-3.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-lg bg-[#3AB03A]/10 text-[#3AB03A] flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-[#3AB03A]/10 text-[#206E20] flex items-center justify-center shrink-0">
                   <Briefcase className="w-4 h-4" />
                 </div>
                 <h3 className="font-sans font-semibold text-sm sm:text-base text-[#2E536B]">
@@ -144,7 +144,7 @@ export const Success: React.FC = () => {
 
               {/* Benefit Areas List */}
               <div className="pt-2 border-t border-[#f3f2ee] space-y-2">
-                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#969696] block">
+                <span className="text-[10.5px] font-mono uppercase tracking-wider text-[#595959] block">
                   Connecting public spending with:
                 </span>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
@@ -153,7 +153,7 @@ export const Success: React.FC = () => {
                       key={aIdx}
                       className="flex items-center gap-1.5 text-xs font-medium text-[#1a2521] bg-[#faf9f6] px-2.5 py-1.5 rounded-lg border border-[#e1e1db]/70"
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5 text-[#3AB03A] shrink-0" />
+                      <CheckCircle2 className="w-3.5 h-3.5 text-[#206E20] shrink-0" />
                       <span>{area}</span>
                     </div>
                   ))}
@@ -167,8 +167,8 @@ export const Success: React.FC = () => {
         <div id="what-success-could-look-like" className="pt-8 border-t border-[#e1e1db]/80 space-y-4">
           <div className="space-y-1.5 text-left">
             <div className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-white border border-[#e1e1db]/80 cursor-default">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#3AB03A]" />
-              <span className="text-[11px] font-bold uppercase tracking-wider text-[#3AB03A]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#206E20]" />
+              <span className="text-[11px] font-bold uppercase tracking-wider text-[#206E20]">
                 PRACTICAL OUTCOMES
               </span>
             </div>
