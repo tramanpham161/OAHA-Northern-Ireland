@@ -5,14 +5,14 @@ import { Sparkles, CheckCircle2 } from 'lucide-react';
 
 export const WhatSuccessCouldLookLike: React.FC = () => {
   const accentColors = [
-    'text-[#2BB7BA]',
-    'text-[#3AB03A]',
-    'text-[#FF9900]',
+    'text-[#136B6F]',
+    'text-[#206E20]',
+    'text-[#A34C00]',
     'text-[#2E536B]',
     'text-[#986430]',
-    'text-[#2BB7BA]',
-    'text-[#3AB03A]',
-    'text-[#FF9900]',
+    'text-[#136B6F]',
+    'text-[#206E20]',
+    'text-[#A34C00]',
     'text-[#2E536B]'
   ];
 
@@ -25,8 +25,8 @@ export const WhatSuccessCouldLookLike: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-4xl space-y-2.5 text-left">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e1e1db]/80 cursor-default">
-            <Sparkles className="w-3.5 h-3.5 text-[#3AB03A]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#3AB03A]">
+            <Sparkles className="w-3.5 h-3.5 text-[#206E20]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#206E20]">
               {whatSuccessCouldLookLikeData.badge}
             </span>
           </div>
