@@ -22,29 +22,29 @@ export const HowWeWork: React.FC = () => {
     {
       theme: 'cyan',
       tabActive: 'border-[#2BB7BA] bg-[#2BB7BA]/5 text-[#2E536B]',
-      numBadge: 'bg-[#2BB7BA] text-white',
+      numBadge: 'bg-[#167478] text-white',
       cardBorder: 'border-t-[#2BB7BA]',
-      iconBg: 'bg-[#2BB7BA]/10 text-[#2BB7BA]',
-      tagBg: 'bg-[#2BB7BA]/10 text-[#24888a]',
-      itemIcon: 'text-[#2BB7BA]'
+      iconBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
+      tagBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
+      itemIcon: 'text-[#136B6F]'
     },
     {
       theme: 'forest',
       tabActive: 'border-[#3AB03A] bg-[#3AB03A]/5 text-[#2E536B]',
-      numBadge: 'bg-[#3AB03A] text-white',
+      numBadge: 'bg-[#237723] text-white',
       cardBorder: 'border-t-[#3AB03A]',
-      iconBg: 'bg-[#3AB03A]/10 text-[#3AB03A]',
-      tagBg: 'bg-[#3AB03A]/10 text-[#2a852a]',
-      itemIcon: 'text-[#3AB03A]'
+      iconBg: 'bg-[#3AB03A]/10 text-[#206E20]',
+      tagBg: 'bg-[#3AB03A]/10 text-[#206E20]',
+      itemIcon: 'text-[#206E20]'
     },
     {
       theme: 'orange',
       tabActive: 'border-[#FF9900] bg-[#FF9900]/5 text-[#2E536B]',
-      numBadge: 'bg-[#FF9900] text-white',
+      numBadge: 'bg-[#A34C00] text-white',
       cardBorder: 'border-t-[#FF9900]',
-      iconBg: 'bg-[#FF9900]/10 text-[#FF9900]',
-      tagBg: 'bg-[#FF9900]/10 text-[#b36b00]',
-      itemIcon: 'text-[#FF9900]'
+      iconBg: 'bg-[#FF9900]/10 text-[#A34C00]',
+      tagBg: 'bg-[#FF9900]/10 text-[#A34C00]',
+      itemIcon: 'text-[#A34C00]'
     }
   ];
 
@@ -61,8 +61,8 @@ export const HowWeWork: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-4xl mb-8 sm:mb-10 space-y-3">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e1e1db]/80 cursor-default">
-            <Network className="w-3.5 h-3.5 text-[#2BB7BA]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2BB7BA]">
+            <Network className="w-3.5 h-3.5 text-[#136B6F]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#136B6F]">
               {whatWeAreDoingData.badge}
             </span>
           </div>
