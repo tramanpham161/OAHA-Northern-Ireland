@@ -35,20 +35,20 @@ export const RoleOfLeeds: React.FC = () => {
       case 'cyan':
         return {
           borderTop: 'border-t-[#2BB7BA]',
-          iconBg: 'bg-[#2BB7BA]/10 text-[#2BB7BA]',
-          tag: 'text-[#2BB7BA]'
+          iconBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
+          tag: 'text-[#136B6F]'
         };
       case 'forest':
         return {
           borderTop: 'border-t-[#3AB03A]',
-          iconBg: 'bg-[#3AB03A]/10 text-[#3AB03A]',
-          tag: 'text-[#3AB03A]'
+          iconBg: 'bg-[#3AB03A]/10 text-[#206E20]',
+          tag: 'text-[#206E20]'
         };
       case 'orange':
         return {
           borderTop: 'border-t-[#FF9900]',
-          iconBg: 'bg-[#FF9900]/10 text-[#FF9900]',
-          tag: 'text-[#FF9900]'
+          iconBg: 'bg-[#FF9900]/10 text-[#A34C00]',
+          tag: 'text-[#A34C00]'
         };
       case 'navy':
         return {
