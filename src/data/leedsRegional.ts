@@ -518,9 +518,12 @@ export const aboutThePartnershipData = {
   partners: [
     {
       name: "Lewis Silkin",
+      role: "Initiative Funder & Regional Convener",
       tagline: "Convening employers and regional stakeholders",
       paragraphs: [
-        "Lewis Silkin is working with OAHA to support the development of this Northern Ireland place-based social mobility initiative, helping to convene employers and wider stakeholders around the shared challenge of widening access to opportunity."
+        "Lewis Silkin is working with OAHA to support the development of this Northern Ireland place-based social mobility initiative, helping to convene employers and wider stakeholders around the shared challenge of widening access to opportunity.",
+        "Social mobility has long been part of the firm’s story. We’re named after Lewis Silkin (1889 – 1972), whose own story continues to inspire us. His family were refugees from Lithuania and he was brought up in poverty, but qualified as a solicitor before becoming an MP and eventually sitting in the House of Lords.",
+        "We continue to be committed to improving social mobility through a wide range of initiatives including outreach and mentoring programmes in schools, and work experience and apprenticeship schemes."
       ]
     },
     {
