@@ -38,9 +38,9 @@ export const WhyMatters: React.FC = () => {
   };
 
   const colorThemes: Record<string, { bg: string; text: string }> = {
-    forest: { bg: "bg-[#3AB03A]/10", text: "text-[#3AB03A]" },
-    cyan: { bg: "bg-[#2BB7BA]/10", text: "text-[#2BB7BA]" },
-    orange: { bg: "bg-[#FF9900]/10", text: "text-[#FF9900]" },
+    forest: { bg: "bg-[#3AB03A]/10", text: "text-[#206E20]" },
+    cyan: { bg: "bg-[#2BB7BA]/10", text: "text-[#136B6F]" },
+    orange: { bg: "bg-[#FF9900]/10", text: "text-[#A34C00]" },
     navy: { bg: "bg-[#2E536B]/10", text: "text-[#2E536B]" },
     brown: { bg: "bg-[#986430]/10", text: "text-[#986430]" }
   };
@@ -54,8 +54,8 @@ export const WhyMatters: React.FC = () => {
         {/* Section Header */}
         <div className="max-w-3xl mb-6 space-y-2.5 text-left">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-[#e1e1db]/80 cursor-default">
-            <Sparkles className="w-3.5 h-3.5 text-[#2BB7BA]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2BB7BA]">
+            <Sparkles className="w-3.5 h-3.5 text-[#136B6F]" />
+            <span className="text-xs font-bold uppercase tracking-widest text-[#136B6F]">
               SYSTEM INGREDIENTS & PATHWAYS
             </span>
           </div>
@@ -121,7 +121,7 @@ export const WhyMatters: React.FC = () => {
                 <React.Fragment key={idx}>
                   {/* Step Node */}
                   <div className="flex flex-col items-center text-center max-w-[130px] group">
-                    <div className="w-8 h-8 rounded-full bg-white border-2 border-[#2BB7BA] text-[#2BB7BA] font-mono font-bold text-xs flex items-center justify-center mb-2.5 shadow-2xs group-hover:bg-[#2BB7BA] group-hover:text-white transition-all">
+                    <div className="w-8 h-8 rounded-full bg-white border-2 border-[#136B6F] text-[#136B6F] font-mono font-bold text-xs flex items-center justify-center mb-2.5 shadow-2xs group-hover:bg-[#136B6F] group-hover:text-white transition-all">
                       0{idx + 1}
                     </div>
                     <span className="font-sans text-xs sm:text-[13px] font-semibold text-[#1a2521] leading-snug">
@@ -131,9 +131,9 @@ export const WhyMatters: React.FC = () => {
 
                   {/* Flow Arrow on Line */}
                   {!isLast && (
-                    <div className="flex-1 flex items-center justify-center px-2 mt-4 text-[#2BB7BA]">
+                    <div className="flex-1 flex items-center justify-center px-2 mt-4 text-[#136B6F]">
                       <div className="w-full h-0.5 bg-[#2BB7BA]/30 relative flex items-center justify-end">
-                        <ArrowRight className="w-3.5 h-3.5 text-[#2BB7BA] absolute -right-1" />
+                        <ArrowRight className="w-3.5 h-3.5 text-[#136B6F] absolute -right-1" />
                       </div>
                     </div>
                   )}
@@ -146,7 +146,7 @@ export const WhyMatters: React.FC = () => {
           <div className="md:hidden space-y-4 py-2 pl-6 border-l-2 border-[#2BB7BA]/40 ml-4 my-2">
             {theOpportunity.journeySteps.map((step, idx) => (
               <div key={idx} className="relative flex items-center gap-3">
-                <div className="absolute -left-[35px] w-6 h-6 rounded-full bg-white border-2 border-[#2BB7BA] text-[#2BB7BA] font-mono font-bold text-[10px] flex items-center justify-center shadow-xs">
+                <div className="absolute -left-[35px] w-6 h-6 rounded-full bg-white border-2 border-[#136B6F] text-[#136B6F] font-mono font-bold text-[10px] flex items-center justify-center shadow-xs">
                   0{idx + 1}
                 </div>
                 <span className="font-sans text-xs sm:text-sm font-semibold text-[#1a2521]">
@@ -159,8 +159,8 @@ export const WhyMatters: React.FC = () => {
           {/* Expected Result: Clean, Unboxed Typography */}
           <div className="pt-6 border-t border-[#e1e1db]/80 space-y-3.5 text-left">
             <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#2BB7BA]" />
-              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#2BB7BA]">
+              <CheckCircle2 className="w-4 h-4 text-[#136B6F]" />
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-[#136B6F]">
                 THE EXPECTED RESULT
               </span>
             </div>
@@ -172,7 +172,7 @@ export const WhyMatters: React.FC = () => {
             {/* 3 Outcome Pillars - Clean, Unboxed without surrounding cards */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-1">
               <div>
-                <span className="text-[11px] font-mono font-bold uppercase text-[#FF9900] block mb-1">
+                <span className="text-[11px] font-mono font-bold uppercase text-[#A34C00] block mb-1">
                   01. CLARITY
                 </span>
                 <p className="font-sans text-xs sm:text-sm text-[#51615a] leading-relaxed font-normal">
@@ -181,7 +181,7 @@ export const WhyMatters: React.FC = () => {
               </div>
 
               <div>
-                <span className="text-[11px] font-mono font-bold uppercase text-[#2BB7BA] block mb-1">
+                <span className="text-[11px] font-mono font-bold uppercase text-[#136B6F] block mb-1">
                   02. TRANSITIONS
                 </span>
                 <p className="font-sans text-xs sm:text-sm text-[#51615a] leading-relaxed font-normal">
@@ -190,7 +190,7 @@ export const WhyMatters: React.FC = () => {
               </div>
 
               <div>
-                <span className="text-[11px] font-mono font-bold uppercase text-[#3AB03A] block mb-1">
+                <span className="text-[11px] font-mono font-bold uppercase text-[#206E20] block mb-1">
                   03. COORDINATION
                 </span>
                 <p className="font-sans text-xs sm:text-sm text-[#51615a] leading-relaxed font-normal">
