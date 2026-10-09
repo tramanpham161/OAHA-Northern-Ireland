@@ -1,15 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { whatWeAreDoingData } from '../data/leedsRegional';
-import { Network, Map, Users, Lightbulb, CheckCircle2, Compass } from 'lucide-react';
+import { Network, Users, Lightbulb, CheckCircle2, Compass } from 'lucide-react';
 
 export const HowWeWork: React.FC = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const getPillarIcon = (id: string, className = "w-5 h-5") => {
     switch (id) {
-      case 'mapping':
-        return <Map className={className} />;
       case 'listening':
         return <Users className={className} />;
       case 'codesigning':
@@ -19,15 +17,6 @@ export const HowWeWork: React.FC = () => {
   };
 
   const colorPalettes = [
-    {
-      theme: 'cyan',
-      tabActive: 'border-[#2BB7BA] bg-[#2BB7BA]/5 text-[#2E536B]',
-      numBadge: 'bg-[#167478] text-white',
-      cardBorder: 'border-t-[#2BB7BA]',
-      iconBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
-      tagBg: 'bg-[#2BB7BA]/10 text-[#136B6F]',
-      itemIcon: 'text-[#136B6F]'
-    },
     {
       theme: 'forest',
       tabActive: 'border-[#3AB03A] bg-[#3AB03A]/5 text-[#2E536B]',
@@ -72,8 +61,8 @@ export const HowWeWork: React.FC = () => {
           </h2>
         </div>
 
-        {/* 3 Overview Action Cards - Clean, direct focus cards without stage numbers */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-8">
+        {/* 2 Overview Action Cards - Clean, direct focus cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-8">
           {whatWeAreDoingData.pillars.map((pillar, idx) => {
             const palette = colorPalettes[idx];
             const isSelected = activeTab === idx;
