@@ -10,7 +10,10 @@ export const Header: React.FC = () => {
     { name: "WHY IT MATTERS", href: "#why-it-matters" },
     { name: "THE OPPORTUNITY", href: "#the-opportunity" },
     { name: "WHAT WE ARE DOING", href: "#how-we-work" },
-    { name: "NI PRIORITIES", href: "#regional-priorities" }
+    { name: "OUR APPROACH", href: "#our-approach" },
+    { name: "NI PRIORITIES", href: "#regional-priorities" },
+    { name: "SHAPE PRIORITIES", href: "#build-the-picture" },
+    { name: "THE PARTNERSHIP", href: "#about-the-partnership" }
   ];
 
   return (
@@ -37,28 +40,28 @@ export const Header: React.FC = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-1.5">
+            <nav className="hidden xl:flex items-center gap-1 2xl:gap-1.5">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[#51615a] hover:text-[#136B6F] hover:bg-[#edeae4]/45 px-3 py-2 rounded-md text-[10px] xl:text-[11px] font-bold tracking-wider uppercase transition-all cursor-pointer"
+                  className="text-[#51615a] hover:text-[#136B6F] hover:bg-[#edeae4]/45 px-2 py-1.5 2xl:px-2.5 rounded-md text-[10px] 2xl:text-[11px] font-bold tracking-wider uppercase transition-all cursor-pointer whitespace-nowrap"
                 >
                   {link.name}
                 </a>
               ))}
               <a
                 href="#be-part"
-                className="ml-3 px-4 py-2 text-[10px] xl:text-[11px] font-bold tracking-wider uppercase text-white bg-[#2E536B] hover:bg-[#1B3B54] rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-1 cursor-pointer"
+                className="ml-2 2xl:ml-3 px-3.5 py-1.5 text-[10px] 2xl:text-[11px] font-bold tracking-wider uppercase text-white bg-[#2E536B] hover:bg-[#1B3B54] rounded-lg shadow-sm hover:shadow-md transition-all flex items-center gap-1 cursor-pointer shrink-0"
               >
                 <span>JOIN US</span>
               </a>
             </nav>
 
-            {/* Mobile Menu Button */}
+            {/* Mobile / Tablet Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg hover:bg-[#edeae4]/60 text-[#1a2521] transition-colors"
+              className="xl:hidden p-2 rounded-lg hover:bg-[#edeae4]/60 text-[#1a2521] transition-colors"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -66,9 +69,9 @@ export const Header: React.FC = () => {
           </div>
         </div>
 
-        {/* Mobile Dropdown */}
+        {/* Mobile / Tablet Dropdown */}
         {mobileMenuOpen && (
-          <div className="md:hidden border-t border-[#e1e1db]/60 bg-white px-4 py-4 space-y-2 animate-fade-in shadow-inner">
+          <div className="xl:hidden border-t border-[#e1e1db]/60 bg-white px-4 py-4 space-y-2 animate-fade-in shadow-inner">
             {navLinks.map((link) => (
               <a
                 key={link.href}
