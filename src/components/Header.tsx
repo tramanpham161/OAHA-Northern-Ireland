@@ -10,8 +10,7 @@ export const Header: React.FC = () => {
     { name: "WHY IT MATTERS", href: "#why-it-matters" },
     { name: "THE OPPORTUNITY", href: "#the-opportunity" },
     { name: "WHAT WE ARE DOING", href: "#how-we-work" },
-    { name: "NI PRIORITIES", href: "#regional-priorities" },
-    { name: "EQUALITY & SOCIAL VALUE", href: "#equality-and-social-value" }
+    { name: "NI PRIORITIES", href: "#regional-priorities" }
   ];
 
   return (
