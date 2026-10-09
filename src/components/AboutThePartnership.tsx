@@ -239,7 +239,7 @@ export const AboutThePartnership: React.FC = () => {
                   <div className="flex flex-wrap gap-2 pt-1">
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#2BB7BA]/10 border border-[#136B6F]/25 text-[#136B6F] text-xs font-medium">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#2BB7BA]" />
-                      Ecosystem Mapping & Analysis
+                      Evidence & System Insights
                     </span>
                     <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-[#3AB03A]/10 border border-[#206E20]/25 text-[#206E20] text-xs font-medium">
                       <span className="w-1.5 h-1.5 rounded-full bg-[#3AB03A]" />
