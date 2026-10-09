@@ -6,10 +6,7 @@ import {
   Briefcase,
   TrendingUp,
   Compass,
-  GraduationCap,
-  BookOpen,
-  UsersRound,
-  CheckCircle2
+  GraduationCap
 } from 'lucide-react';
 
 export const WhoInvolved: React.FC = () => {
@@ -138,57 +135,6 @@ export const WhoInvolved: React.FC = () => {
               );
             })}
           </div>
-        </div>
-
-        {/* 10x Strategy and Local Delivery Dual Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4">
-          {/* Card 1: Skills for a 10x Economy */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.35, delay: 0.1 }}
-            className="bg-[#faf9f6]/70 border border-[#e1e1db]/90 rounded-xl p-4 sm:p-5 flex flex-col justify-between text-left"
-          >
-            <div className="space-y-2.5">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-[#2E536B]/10 text-[#2E536B] flex items-center justify-center shrink-0">
-                  <BookOpen className="w-3.5 h-3.5" />
-                </div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#2E536B]">
-                  Skills for a 10x Economy
-                </span>
-              </div>
-
-              <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                {niPrioritiesData.skillsStrategy}
-              </p>
-            </div>
-          </motion.div>
-
-          {/* Card 2: Local Delivery Collaboration */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-20px" }}
-            transition={{ duration: 0.35, delay: 0.15 }}
-            className="bg-[#faf9f6]/70 border border-[#e1e1db]/90 rounded-xl p-4 sm:p-5 flex flex-col justify-between text-left"
-          >
-            <div className="space-y-2.5">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 rounded-lg bg-[#3AB03A]/10 text-[#206E20] flex items-center justify-center shrink-0">
-                  <UsersRound className="w-3.5 h-3.5" />
-                </div>
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#206E20]">
-                  Local Delivery in Action
-                </span>
-              </div>
-
-              <p className="font-sans font-normal text-xs sm:text-sm text-[#51615a] leading-relaxed">
-                {niPrioritiesData.localDelivery}
-              </p>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
