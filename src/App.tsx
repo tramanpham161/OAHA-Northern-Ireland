@@ -10,7 +10,6 @@ import HowWeWork from './components/HowWeWork';
 import RoleOfLeeds from './components/RoleOfLeeds';
 import WhoInvolved from './components/WhoInvolved';
 import BuildThePicture from './components/BuildThePicture';
-import Success from './components/Success';
 import AboutThePartnership from './components/AboutThePartnership';
 import InquiryForm from './components/InquiryForm';
 import Footer from './components/Footer';
@@ -24,6 +23,7 @@ export default function App() {
     >
       <Header />
       <Hero />
+      <QuickNav />
       <main>
         <Introduction />
         <Ambition />
@@ -33,9 +33,8 @@ export default function App() {
         <RoleOfLeeds />
         <WhoInvolved />
         <BuildThePicture />
-        <Success />
-        <AboutThePartnership />
         <InquiryForm />
+        <AboutThePartnership />
       </main>
       <Footer />
       <ScrollToTop />
