@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import QuickNav from './components/QuickNav';
 import Introduction from './components/Introduction';
 import Ambition from './components/Ambition';
 import WhatWeUnderstand from './components/WhatWeUnderstand';
@@ -23,7 +22,6 @@ export default function App() {
     >
       <Header />
       <Hero />
-      <QuickNav />
       <main>
         <Introduction />
         <Ambition />
