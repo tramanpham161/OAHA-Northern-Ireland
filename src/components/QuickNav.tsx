@@ -6,7 +6,7 @@ import {
   Layers,
   Compass,
   Landmark,
-  Scale,
+  ClipboardList,
   Handshake,
   HeartHandshake
 } from 'lucide-react';
@@ -28,9 +28,9 @@ export const QuickNav: React.FC = () => {
     { id: 'how-we-work', label: 'What We Are Doing', shortLabel: 'Activities', icon: <Layers className="w-3.5 h-3.5" /> },
     { id: 'our-approach', label: 'Our Approach', shortLabel: 'Approach', icon: <Compass className="w-3.5 h-3.5" /> },
     { id: 'regional-priorities', label: 'NI Priorities', shortLabel: 'Priorities', icon: <Landmark className="w-3.5 h-3.5" /> },
-    { id: 'equality-and-social-value', label: 'Outcomes & Equality', shortLabel: 'Outcomes', icon: <Scale className="w-3.5 h-3.5" /> },
-    { id: 'about-the-partnership', label: 'The Partnership', shortLabel: 'Partnership', icon: <Handshake className="w-3.5 h-3.5" /> },
-    { id: 'be-part', label: 'Get Involved', shortLabel: 'Get Involved', icon: <HeartHandshake className="w-3.5 h-3.5" /> }
+    { id: 'build-the-picture', label: 'Shape Priorities', shortLabel: 'Insight', icon: <ClipboardList className="w-3.5 h-3.5" /> },
+    { id: 'be-part', label: 'Get Involved', shortLabel: 'Get Involved', icon: <HeartHandshake className="w-3.5 h-3.5" /> },
+    { id: 'about-the-partnership', label: 'The Partnership', shortLabel: 'Partnership', icon: <Handshake className="w-3.5 h-3.5" /> }
   ];
 
   useEffect(() => {
