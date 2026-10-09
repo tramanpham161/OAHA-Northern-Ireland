@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import niCoastImg from '../assets/images/northern_ireland_coast_opt.jpg';
+import { LewisSilkinLogo } from './LewisSilkinLogo';
+import { OahaLogo } from './OahaLogo';
 
 export const Hero: React.FC = () => {
   return (
@@ -48,6 +50,34 @@ export const Hero: React.FC = () => {
           {/* Sub Title: Font Inter (font-sans), font-normal */}
           <div className="text-[#2E536B] font-sans font-normal text-base sm:text-lg tracking-normal text-left">
             Creating clearer pathways into good work
+          </div>
+
+          {/* 2 Partner Logos Side-by-Side (Directly on banner background, no separated box) */}
+          <div className="pt-3 sm:pt-4 flex items-center gap-5 sm:gap-7 flex-wrap">
+            <a
+              href="https://www.lewissilkin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center hover:opacity-80 transition-opacity"
+              title="Lewis Silkin"
+              aria-label="Lewis Silkin Website"
+            >
+              <LewisSilkinLogo className="h-7 sm:h-8.5 w-auto" />
+            </a>
+
+            <a
+              href="https://oaha.uk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 hover:opacity-80 transition-opacity"
+              title="OAHA"
+              aria-label="OAHA Website"
+            >
+              <OahaLogo className="h-6 sm:h-7.5 w-auto object-contain rounded-xs border border-[#e1e1db]/60 shadow-3xs" />
+              <span className="font-sans font-bold text-sm sm:text-base tracking-wider text-[#2E536B]">
+                OAHA
+              </span>
+            </a>
           </div>
         </div>
       </div>
