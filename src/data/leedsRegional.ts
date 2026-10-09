@@ -155,26 +155,8 @@ export const whatWeAreDoingData = {
   title: "What we are doing",
   pillars: [
     {
-      id: "mapping",
-      stepNumber: "01",
-      title: "Mapping the existing ecosystem",
-      lead: "We will build a clearer picture of the organisations, initiatives and programmes currently supporting people into education, training and employment.",
-      listPrompt: "This will include:",
-      items: [
-        "Where support is available",
-        "Who different initiatives are reaching",
-        "Which stages of the journey they address",
-        "How employers are currently involved",
-        "How people are referred between organisations",
-        "Where gaps or duplication may exist",
-        "Where greater connection could add value"
-      ],
-      footerNote: "The mapping is not intended to be a definitive directory or an assessment of individual organisations. It will be a developing picture of the system, designed to support shared learning and coordinated action.",
-      color: "cyan" as const
-    },
-    {
       id: "listening",
-      stepNumber: "02",
+      stepNumber: "01",
       title: "Listening to young people and communities",
       lead: "People closest to the challenges must help shape the response.",
       listPrompt: "We will work with young people and community partners to understand:",
@@ -192,7 +174,7 @@ export const whatWeAreDoingData = {
     },
     {
       id: "codesigning",
-      stepNumber: "03",
+      stepNumber: "02",
       title: "Co-designing practical solutions",
       lead: "We will bring young people, employers, educators, community organisations and wider stakeholders together to prioritise a small number of practical interventions.",
       listPrompt: "These could include:",
@@ -440,59 +422,36 @@ export const successGoals = {
 };
 
 export const buildThePictureData = {
-  badge: "ECOSYSTEM INSIGHT",
+  badge: "SHAPING PRIORITIES",
   title: "Help us build the picture",
-  lead: "We want to hear from organisations supporting people at any point in the journey from education into employment.",
-  prompt: "The questionnaire will help us understand:",
-  items: [
-    "Who you support",
-    "Where you operate",
-    "What type of support you provide",
-    "Which stages of the journey you address",
-    "The barriers you are seeing",
-    "How people find or access your support",
-    "How employers are involved",
-    "Where you believe support is missing",
-    "Where greater collaboration could improve outcomes"
-  ],
-  footerNote: "The questionnaire is a starting point. It is not a detailed evaluation of your organisation or programme.",
+  headline: "Your insight can shape what happens next",
+  lead: "Start by sharing what you know. Your insight will help us decide where to focus.",
   ctaText: "Complete the questionnaire",
   questionnaireUrl: "https://forms.gle/ASMTJYBQSSsdE3r2A",
-  whoWeWantToHearFrom: {
-    title: "Who we want to hear from",
-    prompt: "We welcome contributions from:",
-    contributors: [
-      "Young people",
-      "Schools and colleges",
-      "Universities and training providers",
-      "Employers of all sizes and sectors",
-      "Business and professional networks",
-      "Councils and government departments",
-      "Careers and employability services",
-      "Youth and community organisations",
-      "Charities and social enterprises",
-      "Organisations supporting disabled people and people with health-related barriers",
-      "Organisations working in rural communities",
-      "Anyone helping people access, enter or progress in employment"
-    ]
-  },
-  howEmployersCanContribute: {
-    title: "How employers can contribute",
-    lead: "Employers have an important role to play beyond providing jobs.",
-    prompt: "You can support the initiative by:",
-    waysToSupport: [
-      "Completing the questionnaire",
-      "Sharing insight into current and future skills needs",
-      "Offering workplace encounters, mentoring or work experience",
-      "Helping people understand different sectors and careers",
-      "Reviewing recruitment and progression practices",
-      "Taking part in a workshop or working group",
-      "Supporting a future pilot",
-      "Introducing us to relevant partners",
-      "Sharing what has worked—or where engagement has been difficult"
-    ],
-    smeNote: "Small and medium-sized employers are particularly important. We want to understand what would make participation realistic and valuable for organisations with limited time and capacity."
-  }
+  invitedNote: "Schools, colleges, councils and business networks are also invited to contribute.",
+  audiences: [
+    {
+      id: "employers",
+      title: "Employers",
+      tagline: "Reach young people whose talent you may be missing.",
+      description: "Share your skills needs and experience of recruitment, and help shape practical ways to connect with local communities.",
+      theme: "cyan"
+    },
+    {
+      id: "charities",
+      title: "Charities and community organisations",
+      tagline: "Help shape action around the people and places you know.",
+      description: "Tell us what is working, where support is missing and where stronger connections with employers could help.",
+      theme: "forest"
+    },
+    {
+      id: "young-people",
+      title: "Young people and communities",
+      tagline: "Your experience will help set the priorities.",
+      description: "Tell us what makes opportunity easier or harder to access, and help design the changes that would make a difference.",
+      theme: "orange"
+    }
+  ]
 };
 
 export const whatSuccessCouldLookLikeData = {
