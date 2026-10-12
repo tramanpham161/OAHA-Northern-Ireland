@@ -5,9 +5,7 @@ import {
   Compass,
   Briefcase,
   UsersRound,
-  Sparkles,
-  ExternalLink,
-  GraduationCap
+  Sparkles
 } from 'lucide-react';
 
 export const BuildThePicture: React.FC = () => {
@@ -44,7 +42,7 @@ export const BuildThePicture: React.FC = () => {
   return (
     <section
       id="build-the-picture"
-      className="scroll-mt-20 py-8 sm:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#969696]/30 bg-white font-sans text-left"
+      className="scroll-mt-20 pt-8 sm:pt-12 pb-2 sm:pb-3 px-4 sm:px-6 lg:px-8 bg-white font-sans text-left"
     >
       {/* Anchor alias to support #build-the-future */}
       <span id="build-the-future" className="sr-only" />
@@ -113,30 +111,6 @@ export const BuildThePicture: React.FC = () => {
             );
           })}
         </div>
-
-        {/* Additional Invitation & Questionnaire Action Bar */}
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-20px' }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-          className="bg-[#faf9f6] border border-[#e1e1db] rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4 shadow-3xs"
-        >
-          <div className="flex items-start sm:items-center gap-2.5 text-xs sm:text-sm text-[#51615a]">
-            <GraduationCap className="w-4 h-4 text-[#2E536B] shrink-0 mt-0.5 sm:mt-0" />
-            <span>{buildThePictureData.invitedNote}</span>
-          </div>
-
-          <a
-            href={buildThePictureData.questionnaireUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#2E536B] hover:bg-[#1B3B54] text-white text-xs sm:text-sm font-semibold shadow-xs hover:shadow-sm transition-all cursor-pointer shrink-0 self-start sm:self-auto group"
-          >
-            <span>{buildThePictureData.ctaText}</span>
-            <ExternalLink className="w-3.5 h-3.5 text-white/90 group-hover:translate-x-0.5 transition-transform" />
-          </a>
-        </motion.div>
       </div>
     </section>
   );
