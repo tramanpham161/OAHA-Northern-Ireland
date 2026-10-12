@@ -11,7 +11,6 @@ export const Header: React.FC = () => {
     { name: "THE OPPORTUNITY", href: "#the-opportunity" },
     { name: "WHAT WE ARE DOING", href: "#how-we-work" },
     { name: "OUR APPROACH", href: "#our-approach" },
-    { name: "NI PRIORITIES", href: "#regional-priorities" },
     { name: "SHAPE PRIORITIES", href: "#build-the-picture" },
     { name: "THE PARTNERSHIP", href: "#about-the-partnership" }
   ];
