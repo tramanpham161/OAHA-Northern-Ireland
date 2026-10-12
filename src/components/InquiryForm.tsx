@@ -9,7 +9,6 @@ import {
   CheckCircle2,
   AlertCircle,
   Send,
-  Compass,
   FileText,
   RotateCcw
 } from 'lucide-react';
@@ -197,26 +196,8 @@ export const InquiryForm: React.FC = () => {
   };
 
   return (
-    <section id="be-part" className="scroll-mt-20 py-8 sm:py-12 px-4 sm:px-6 lg:px-8 border-b border-[#969696]/30 bg-white font-sans text-left">
-      <div className="max-w-6xl mx-auto space-y-6 sm:space-y-8">
-        {/* Section Header */}
-        <div className="max-w-3xl space-y-2.5 text-left">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#faf9f6] border border-[#e1e1db]/80 cursor-default">
-            <Compass className="w-3.5 h-3.5 text-[#2E536B]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-[#2E536B]">
-              {bePartOfTheProject.badge}
-            </span>
-          </div>
-
-          <h2 className="font-sans font-normal text-2xl sm:text-3xl tracking-tight text-[#2E536B]">
-            {bePartOfTheProject.title}
-          </h2>
-
-          <p className="font-sans font-normal text-base sm:text-lg text-[#1a2521] leading-relaxed pt-1">
-            {bePartOfTheProject.subtitle}
-          </p>
-        </div>
-
+    <section id="be-part" className="scroll-mt-20 pt-3 sm:pt-4 pb-8 sm:pb-12 px-4 sm:px-6 lg:px-8 border-b border-[#969696]/30 bg-white font-sans text-left">
+      <div className="w-full max-w-7xl mx-auto space-y-6 sm:space-y-8">
         {/* 4 Suitable Call-To-Action Buttons (4 Colors of OAHA Logo, compact & sleek) */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3">
           {/* Button 1: Complete the questionnaire (#2BB7BA Teal) */}
