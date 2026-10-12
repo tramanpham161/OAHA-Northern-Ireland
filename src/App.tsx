@@ -7,7 +7,6 @@ import WhatWeUnderstand from './components/WhatWeUnderstand';
 import WhyMatters from './components/WhyMatters';
 import HowWeWork from './components/HowWeWork';
 import RoleOfLeeds from './components/RoleOfLeeds';
-import WhoInvolved from './components/WhoInvolved';
 import BuildThePicture from './components/BuildThePicture';
 import AboutThePartnership from './components/AboutThePartnership';
 import InquiryForm from './components/InquiryForm';
@@ -29,7 +28,6 @@ export default function App() {
         <WhyMatters />
         <HowWeWork />
         <RoleOfLeeds />
-        <WhoInvolved />
         <BuildThePicture />
         <InquiryForm />
         <AboutThePartnership />
