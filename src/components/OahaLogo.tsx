@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface OahaLogoProps {
   className?: string;
@@ -9,7 +9,20 @@ export const OahaLogo: React.FC<OahaLogoProps> = ({
   className = "w-[120px] h-[80px]",
   size
 }) => {
+  const [imageError, setImageError] = useState(false);
   const style = size ? { width: size, height: typeof size === "number" ? size * 0.67 : undefined } : undefined;
+
+  if (!imageError) {
+    return (
+      <img
+        src="/images/oaha-logo.png"
+        alt="OAHA Logo"
+        className={`select-none object-contain ${className}`}
+        style={style}
+        onError={() => setImageError(true)}
+      />
+    );
+  }
 
   return (
     <svg viewBox="0 0 300 200" className={`select-none ${className}`} style={style} xmlns="http://www.w3.org/2000/svg">
@@ -29,3 +42,4 @@ export const OahaLogo: React.FC<OahaLogoProps> = ({
 };
 
 export default OahaLogo;
+
